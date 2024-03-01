@@ -22,6 +22,7 @@ export const EditEventModal = ({
   const [formData, setFormData] = useState({});
   const toast = useToast();
 
+  console.log(formData);
   useEffect(() => {
     setFormData({
       title: event.title,

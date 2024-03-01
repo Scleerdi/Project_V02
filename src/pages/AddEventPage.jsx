@@ -3,13 +3,11 @@ import React, { useEffect, useState } from "react";
 import { EventForm } from "../components/EventForm";
 import { Button, useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import { useUser } from "../context/UserContext";
 
 export const AddEventPage = () => {
   const [events, setEvents] = useState([]);
   const navigate = useNavigate();
   const toast = useToast();
-  const { users } = useUser();
 
   const handleAddEvent = async (newEventData) => {
     try {

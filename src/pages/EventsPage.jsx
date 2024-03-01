@@ -32,6 +32,9 @@ export const EventsPage = () => {
     fetchEvents();
   }, []);
 
+  console.log(searchTerm);
+  console.log(selectedCategory);
+
   useEffect(() => {
     setFilteredEvents(events);
   }, [events]);
